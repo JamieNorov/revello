@@ -18,7 +18,7 @@ const KEYWORDS = [
   { kw: 'family dentist near me', match: 'broad', clicks: 87, impr: 2100, ctr: '4.1%', leads: 3, calls: 6 },
 ]
 
-const MATCH_COLORS: Record<string, string> = { exact: '#176b62', phrase: '#7770a9', broad: '#c99842' }
+const MATCH_COLORS: Record<string, string> = { exact: '#7ee5c2', phrase: '#c7a8ff', broad: '#f0d567' }
 
 export default function GoogleAdsPage() {
   const [budget, setBudget] = useState(1500)

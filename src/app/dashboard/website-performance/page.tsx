@@ -11,12 +11,12 @@ export default function WebsitePerformancePage() {
     { rank: 8, name: 'Emergency Dental', visits: 441, change: '+41%', up: true },
   ]
   const SOURCES = [
-    { label: 'Organic Search', pct: 48, count: '4,182', color: '#176b62' },
-    { label: 'Direct', pct: 21, count: '1,831', color: '#3b7dd8' },
-    { label: 'Paid Search', pct: 17, count: '1,481', color: '#7770a9' },
-    { label: 'Paid Social', pct: 9, count: '785', color: '#e2765e' },
-    { label: 'Organic Social', pct: 3, count: '261', color: '#c99842' },
-    { label: 'Other', pct: 2, count: '174', color: '#9aa09d' },
+    { label: 'Organic Search', pct: 48, count: '4,182', color: '#7ee5c2' },
+    { label: 'Direct', pct: 21, count: '1,831', color: '#4b9cf4' },
+    { label: 'Paid Search', pct: 17, count: '1,481', color: '#c7a8ff' },
+    { label: 'Paid Social', pct: 9, count: '785', color: '#ff7658' },
+    { label: 'Organic Social', pct: 3, count: '261', color: '#f0d567' },
+    { label: 'Other', pct: 2, count: '174', color: '#555d59' },
   ]
   return (
     <div className="page-website-perf">
