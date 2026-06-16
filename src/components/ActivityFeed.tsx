@@ -27,12 +27,12 @@ const CATEGORY_LABELS: Record<string, string> = {
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  practice_growth: '#7ee5c2',
-  site_seo: '#60a5fa',
-  local_seo: '#a78bfa',
-  geo_llm: '#f59e0b',
-  google_ads: '#34d399',
-  meta_ads: '#f472b6',
+  practice_growth: '#176b62',
+  site_seo: '#7770a9',
+  local_seo: '#0e514a',
+  geo_llm: '#c99842',
+  google_ads: '#176b62',
+  meta_ads: '#e2765e',
 }
 
 const CategoryIcon = ({ cat }: { cat: string }) => {

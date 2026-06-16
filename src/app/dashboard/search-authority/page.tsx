@@ -5,9 +5,9 @@ import ActivityFeed from '@/components/ActivityFeed'
 const TABS = ['Monthly Insights', 'Site SEO - Google', 'Site SEO - Bing', 'Local SEO', 'GEO/LLM SEO']
 
 const POSITION_BUCKETS = [
-  { label: 'Position 1–3', color: '#7ee5c2', count: 12, keywords: ['dentist charlotte nc', 'dental implants charlotte', 'emergency dentist charlotte nc', 'family dentist charlotte'] },
-  { label: 'Position 4–10', color: '#60a5fa', count: 34, keywords: ['teeth whitening charlotte', 'invisalign charlotte', 'dental cleaning near me', 'pediatric dentist charlotte'] },
-  { label: 'Position 11–20', color: '#f59e0b', count: 28, keywords: ['cosmetic dentist charlotte nc', 'dental veneers charlotte', 'full mouth restoration'] },
+  { label: 'Position 1–3', color: '#176b62', count: 12, keywords: ['dentist charlotte nc', 'dental implants charlotte', 'emergency dentist charlotte nc', 'family dentist charlotte'] },
+  { label: 'Position 4–10', color: '#7770a9', count: 34, keywords: ['teeth whitening charlotte', 'invisalign charlotte', 'dental cleaning near me', 'pediatric dentist charlotte'] },
+  { label: 'Position 11–20', color: '#c99842', count: 28, keywords: ['cosmetic dentist charlotte nc', 'dental veneers charlotte', 'full mouth restoration'] },
 ]
 
 export default function SearchAuthorityPage() {
@@ -117,7 +117,7 @@ export default function SearchAuthorityPage() {
       {activeTab === 'GEO/LLM SEO' && (
         <div>
           <div className="geo-highlight">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7ee5c2" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             <div>
               <strong>47 AI mentions this period</strong>
               <p>Your practice was cited as a source in AI-generated responses across ChatGPT, Gemini, and Perplexity.</p>

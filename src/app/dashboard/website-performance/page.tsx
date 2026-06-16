@@ -11,12 +11,12 @@ export default function WebsitePerformancePage() {
     { rank: 8, name: 'Emergency Dental', visits: 441, change: '+41%', up: true },
   ]
   const SOURCES = [
-    { label: 'Organic Search', pct: 48, count: '4,182', color: '#7ee5c2' },
-    { label: 'Direct', pct: 21, count: '1,831', color: '#60a5fa' },
-    { label: 'Paid Search', pct: 17, count: '1,481', color: '#a78bfa' },
-    { label: 'Paid Social', pct: 9, count: '785', color: '#f472b6' },
-    { label: 'Organic Social', pct: 3, count: '261', color: '#f59e0b' },
-    { label: 'Other', pct: 2, count: '174', color: '#6b7280' },
+    { label: 'Organic Search', pct: 48, count: '4,182', color: '#176b62' },
+    { label: 'Direct', pct: 21, count: '1,831', color: '#3b7dd8' },
+    { label: 'Paid Search', pct: 17, count: '1,481', color: '#7770a9' },
+    { label: 'Paid Social', pct: 9, count: '785', color: '#e2765e' },
+    { label: 'Organic Social', pct: 3, count: '261', color: '#c99842' },
+    { label: 'Other', pct: 2, count: '174', color: '#9aa09d' },
   ]
   return (
     <div className="page-website-perf">
@@ -70,7 +70,7 @@ export default function WebsitePerformancePage() {
             <div key={m.label} className="metric-card-sm">
               <div className="metric-card-label">{m.label}</div>
               <div className="metric-card-value">{m.value}</div>
-              <div className="metric-card-sub" style={{ color: '#7ee5c2' }}>{m.sub}</div>
+              <div className="metric-card-sub" style={{ color: 'var(--teal)' }}>{m.sub}</div>
             </div>
           ))}
         </div>
@@ -85,7 +85,7 @@ export default function WebsitePerformancePage() {
               <span className="page-name">{p.name}</span>
               <div className="page-bar-wrap"><div className="page-bar" style={{ width: `${(p.visits / 3821) * 100}%` }}/></div>
               <span className="page-visits">{p.visits.toLocaleString()}</span>
-              <span className="page-change" style={{ color: p.up ? '#7ee5c2' : '#f87171' }}>{p.change}</span>
+              <span className="page-change" style={{ color: p.up ? 'var(--teal)' : 'var(--coral)' }}>{p.change}</span>
             </div>
           ))}
         </div>

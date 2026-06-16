@@ -65,7 +65,7 @@ const AGENTS = [
   },
 ]
 
-const STATUS_COLOR = { active: '#7ee5c2', partial: '#f59e0b', inactive: '#6b7280' }
+const STATUS_COLOR = { active: '#176b62', partial: '#c99842', inactive: '#697572' }
 const STATUS_LABEL = { active: 'Active', partial: 'Partially Live', inactive: 'Inactive' }
 
 export default function WelcomePage() {
@@ -132,7 +132,7 @@ export default function WelcomePage() {
               <ul className="agent-bullets">
                 {agent.bullets.map(b => (
                   <li key={b}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7ee5c2" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#176b62" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
                     {b}
                   </li>
                 ))}

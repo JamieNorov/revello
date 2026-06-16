@@ -2,14 +2,14 @@
 import { useState, useEffect } from 'react'
 
 const STAGES = [
-  { id: 'new_lead', label: 'New Lead', color: '#60a5fa' },
-  { id: 'contacted', label: 'Contacted', color: '#a78bfa' },
-  { id: 'appt_scheduled', label: 'Appt Scheduled', color: '#7ee5c2' },
-  { id: 'appt_completed', label: 'Appt Completed', color: '#34d399' },
-  { id: 'treatment_presented', label: 'Treatment Presented', color: '#f59e0b' },
-  { id: 'active_patient', label: 'Active Patient', color: '#10b981' },
-  { id: 'recall_due', label: 'Recall Due', color: '#f97316' },
-  { id: 'lost', label: 'Lost / No-Show', color: '#6b7280' },
+  { id: 'new_lead', label: 'New Lead', color: '#7770a9' },
+  { id: 'contacted', label: 'Contacted', color: '#176b62' },
+  { id: 'appt_scheduled', label: 'Appt Scheduled', color: '#0e514a' },
+  { id: 'appt_completed', label: 'Appt Completed', color: '#176b62' },
+  { id: 'treatment_presented', label: 'Treatment Presented', color: '#c99842' },
+  { id: 'active_patient', label: 'Active Patient', color: '#176b62' },
+  { id: 'recall_due', label: 'Recall Due', color: '#e2765e' },
+  { id: 'lost', label: 'Lost / No-Show', color: '#9aa09d' },
 ]
 
 const MOCK_LEADS = [
@@ -24,8 +24,8 @@ const MOCK_LEADS = [
 ]
 
 const SOURCE_COLORS: Record<string, string> = {
-  'Google Ads': '#4285F4', 'Meta Ads': '#1877F2', 'Referral': '#7ee5c2',
-  'Google Organic': '#34d399', 'Existing': '#6b7280',
+  'Google Ads': '#4285F4', 'Meta Ads': '#1877F2', 'Referral': '#176b62',
+  'Google Organic': '#0e514a', 'Existing': '#697572',
 }
 
 export default function CRMPage() {
