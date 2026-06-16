@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "Bash(vercel --version)",
+      "Bash(git --version)",
+      "Bash(npx --version)",
+      "Bash(npm --version)",
+      "Bash(ls /usr/local/bin/node /opt/homebrew/bin/node ~/.nvm/versions/node/*/bin/node 2>/dev/null | head -5 && ls /opt/homebrew/bin/gh /opt/homebrew/bin/vercel 2>/dev/null)",
+      "Bash(ls $HOME/.nvm/versions/node/v20.20.2/bin/ | grep -E \"gh|vercel\")",
+      "Bash(brew install *)",
+      "Bash(/opt/homebrew/bin/brew install *)",
+      "Bash(find /usr/local /Users/jamienorov -name \"brew\" 2>/dev/null | head -3)"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ActivityEvent {
+  id         String   @id @default(cuid())
+  type       String
+  category   String
+  message    String
+  locationId String
+  payload    Json
+  createdAt  DateTime @default(now())
+
+  @@index([locationId, createdAt(sort: Desc)])
+}
+
+model Competitor {
+  id         String   @id @default(cuid())
+  name       String
+  city       String?
+  locationId String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  snapshots  CompetitorAdSnapshot[]
+
+  @@unique([name, locationId])
+}
+
+model CompetitorAdSnapshot {
+  id           String     @id @default(cuid())
+  competitorId String
+  competitor   Competitor @relation(fields: [competitorId], references: [id], onDelete: Cascade)
+  isRunningAds Boolean
+  adCount      Int
+  spendLow     Int        @default(0)
+  spendHigh    Int        @default(0)
+  creatives    Json
+  capturedAt   DateTime   @default(now())
+
+  @@index([competitorId, capturedAt(sort: Desc)])
+}
+
+model MorningBrief {
+  id         String   @id @default(cuid())
+  locationId String
+  dateKey    String
+  script     String   @db.Text
+  createdAt  DateTime @default(now())
+
+  @@unique([locationId, dateKey])
+}
