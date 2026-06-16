@@ -10,7 +10,18 @@
       "Bash(ls $HOME/.nvm/versions/node/v20.20.2/bin/ | grep -E \"gh|vercel\")",
       "Bash(brew install *)",
       "Bash(/opt/homebrew/bin/brew install *)",
-      "Bash(find /usr/local /Users/jamienorov -name \"brew\" 2>/dev/null | head -3)"
+      "Bash(find /usr/local /Users/jamienorov -name \"brew\" 2>/dev/null | head -3)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(curl -s https://services.leadconnectorhq.com/opportunities/pipelines?locationId=obBrnPVapJKE8d8nYw2l -H 'Authorization: Bearer pit-dd658d23-22a3-41b6-994b-bb75dc2b9734' -H 'Version: 2021-07-28')",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s https://services.leadconnectorhq.com/workflows/?locationId=obBrnPVapJKE8d8nYw2l -H 'Authorization: Bearer pit-dd658d23-22a3-41b6-994b-bb75dc2b9734' -H 'Version: 2021-07-28')",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(f\\\\\" {f.get\\('id'\\)} | {f.get\\('name'\\)}\\\\\"\\) for f in d.get\\('customFields',[]\\)]\")",
+      "Bash(curl -s https://services.leadconnectorhq.com/locations/obBrnPVapJKE8d8nYw2l -H 'Authorization: Bearer pit-dd658d23-22a3-41b6-994b-bb75dc2b9734' -H 'Version: 2021-07-28')",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('location', {}\\).get\\('name', d\\)\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
