@@ -33,7 +33,10 @@
       "Bash(git checkout *)",
       "Bash(pkill -f \"next dev\")",
       "mcp__Claude_Preview__preview_start",
-      "Bash(kill -9 22712)"
+      "Bash(kill -9 22712)",
+      "Bash(git fetch *)",
+      "Bash(git merge *)",
+      "Bash(git commit *)"
     ]
   }
 }
