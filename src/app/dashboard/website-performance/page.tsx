@@ -67,7 +67,7 @@ export default function WebsitePerformancePage() {
             { label: 'Bounce Rate', value: '29%', sub: '↓ Below industry avg (42%)' },
             { label: 'Avg Events / Visit', value: '4.8', sub: 'Above average (3.2)' },
           ].map(m => (
-            <div key={m.label} className="metric-card-sm">
+            <div key={m.label} className="metric-card">
               <div className="metric-card-label">{m.label}</div>
               <div className="metric-card-value">{m.value}</div>
               <div className="metric-card-sub" style={{ color: 'var(--teal)' }}>{m.sub}</div>

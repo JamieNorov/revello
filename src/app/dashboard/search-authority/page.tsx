@@ -59,7 +59,7 @@ export default function SearchAuthorityPage() {
               { label: 'CTR', value: '4.7%', sub: 'Last 90 days' },
               { label: 'Avg. Position', value: '8.2', sub: 'Last 90 days' },
             ].map(m => (
-              <div key={m.label} className="metric-card-sm">
+              <div key={m.label} className="metric-card">
                 <div className="metric-card-label">{m.label}</div>
                 <div className="metric-card-value">{m.value}</div>
                 <div className="metric-card-sub">{m.sub}</div>
@@ -103,7 +103,7 @@ export default function SearchAuthorityPage() {
               { label: 'Direction Requests', value: '148', sub: 'Last 90 days' },
               { label: 'Website Clicks', value: '892', sub: 'Last 90 days' },
             ].map(m => (
-              <div key={m.label} className="metric-card-sm">
+              <div key={m.label} className="metric-card">
                 <div className="metric-card-label">{m.label}</div>
                 <div className="metric-card-value">{m.value}</div>
                 <div className="metric-card-sub">{m.sub}</div>

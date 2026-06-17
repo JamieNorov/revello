@@ -51,7 +51,7 @@ export default function GoogleAdsPage() {
 
       <div className="metrics-row">
         {METRICS.map(m => (
-          <div key={m.label} className="metric-card-sm">
+          <div key={m.label} className="metric-card">
             <div className="metric-card-label">{m.label}</div>
             <div className="metric-card-value">{m.value}</div>
           </div>

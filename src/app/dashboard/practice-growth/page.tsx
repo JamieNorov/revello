@@ -20,7 +20,7 @@ export default function PracticeGrowthPage() {
           { label: 'Recovered Appointments', value: loading ? '...' : String(metrics.recoveredAppointments), trend: fmt$(metrics.recoveredProduction) + ' recovered', positive: true },
           { label: 'Agent Hours Saved', value: loading ? '...' : String(metrics.agentHoursSaved), trend: '+12.2 this week', positive: true },
         ].map(m => (
-          <div key={m.label} className="metric-card-sm">
+          <div key={m.label} className="metric-card">
             <div className="metric-card-label">{m.label}</div>
             <div className="metric-card-value">{m.value}</div>
             <div className={`metric-card-trend ${m.positive ? 'positive' : ''}`}>{m.trend}</div>

@@ -27,7 +27,13 @@
       "Bash(/usr/local/bin/npm run *)",
       "Bash(command -v npm)",
       "Bash(ls /opt/homebrew/bin/node /opt/homebrew/bin/npm ~/.nvm/versions/node/*/bin/npm 2>/dev/null | head -5; ls ~/.nvm/versions/node/ 2>/dev/null)",
-      "Bash(~/.nvm/versions/node/v20.20.2/bin/npm run *)"
+      "Bash(~/.nvm/versions/node/v20.20.2/bin/npm run *)",
+      "Read(//Users/jamienorov/Downloads/**)",
+      "Bash(unzip -o files.zip -d caseflow-design-spec)",
+      "Bash(git checkout *)",
+      "Bash(pkill -f \"next dev\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(kill -9 22712)"
     ]
   }
 }

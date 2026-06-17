@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import NovaPrompt from '@/components/NovaPrompt'
 
 const AGENTS = [
   {
@@ -79,30 +79,22 @@ export default function WelcomePage() {
 
   return (
     <div className="page-welcome">
-      <div className="welcome-hero">
-        <div className="hero-left">
-          <div className="active-agents-pill">
-            <span className="pulse-dot green"/>
-            {activeCount} ACTIVE AGENTS
-          </div>
-          <h1>Welcome back,<br />{practiceName} — {location}</h1>
-          <p className="hero-sub">
-            Revello AI is making changes across your campaigns, website, and search presence every week.
-            Check the Activity Log to see exactly what was done and why.
-          </p>
-          <Link href="/dashboard/activity-log" className="btn-primary-pill">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            View Activity Log
-          </Link>
-        </div>
-        <div className="hero-right">
-          <div className="insight-card">
-            <div className="insight-card-label">INSIGHT</div>
-            <h3>The 2030 Dental Practice Operating Model</h3>
-            <p>Every practice will run on AI agents by 2030. Most won't start building until 2028. This guide explains the model yours is already running on and why the head start compounds.</p>
-            <a href="#" className="insight-link">Read the guide →</a>
+      <NovaPrompt
+        greeting={`Good to see you, ${practiceName.split(' ')[0]}.`}
+        question="What should we grow today?"
+        proof={`${activeCount} agents active across ${practiceName} — ${location}.`}
+      />
+
+      <div className="panel" style={{ padding: 19, marginBottom: 12 }}>
+        <div className="panel-heading">
+          <div>
+            <h3 style={{ color: 'var(--gold)' }}>INSIGHT — The 2030 Dental Practice Operating Model</h3>
+            <p style={{ marginTop: 8, maxWidth: 640 }}>Every practice will run on AI agents by 2030. Most won&apos;t start building until 2028. This guide explains the model yours is already running on and why the head start compounds.</p>
           </div>
         </div>
+        <a href="#" className="text-button" style={{ marginTop: 14, display: 'inline-flex' }}>Read the guide
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
       </div>
 
       <div className="agents-section">
