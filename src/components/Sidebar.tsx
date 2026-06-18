@@ -1,6 +1,9 @@
 'use client'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
+const SIDEBAR_EXPANDED_KEY = 'revello-sidebar-expanded'
 
 const nav = [
   { href: '/dashboard/welcome', label: 'Welcome', icon: 'home' },
@@ -43,13 +46,30 @@ const icons: Record<string, JSX.Element> = {
 
 export default function Sidebar() {
   const pathname = usePathname()
+  const [expanded, setExpanded] = useState(false)
+
+  useEffect(() => {
+    if (localStorage.getItem(SIDEBAR_EXPANDED_KEY) === 'true') setExpanded(true)
+  }, [])
+
+  const toggle = () => {
+    setExpanded(prev => {
+      const next = !prev
+      localStorage.setItem(SIDEBAR_EXPANDED_KEY, String(next))
+      return next
+    })
+  }
 
   return (
-    <aside className="sidebar" id="sidebar">
+    <aside className={`sidebar${expanded ? ' expanded' : ''}`} id="sidebar">
       <div className="brand">
         <div className="brand-mark"><span/><span/><span/></div>
         <div><strong>NOVA</strong><small>Dental OS</small></div>
       </div>
+
+      <button className="sidebar-toggle" onClick={toggle} title={expanded ? 'Collapse sidebar' : 'Expand sidebar'} aria-label={expanded ? 'Collapse sidebar' : 'Expand sidebar'}>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
 
       <button className="practice-switcher" title="Northstar Dental">
         <div className="practice-avatar">RD</div>

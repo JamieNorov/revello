@@ -36,7 +36,10 @@
       "Bash(kill -9 22712)",
       "Bash(git fetch *)",
       "Bash(git merge *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(curl -s http://localhost:3000/dashboard/welcome)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/dashboard/welcome)",
+      "Bash(pkill -f \"next-server\")"
     ]
   }
 }
